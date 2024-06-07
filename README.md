@@ -9,15 +9,15 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size :yum:
-- See hover states for all interactive elements on the page :yum
-- Toggle color theme to their preference :yum
+- See hover states for all interactive elements on the page :yum:
+- Toggle color theme to their preference :yum:
 
 ### Solution
 
-- Built with:
+- Built with: `HTML` `CSS` `JS`
 - Mobile first workflow
 
-:link: [`Solution Link`]() :link: [`Live Site Link`]()
+:link: [`Solution Link`](https://www.frontendmentor.io/solutions/only-html-and-css-and-js-U4dZJoVLIj) :link: [`Live Site Link`](https://haquanq.github.io/fm-social-media-dashboard-with-theme/)
 
 ![](./.docs/design/desktop-design-dark.jpg)
 
