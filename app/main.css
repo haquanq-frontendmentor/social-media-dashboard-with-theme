@@ -269,7 +269,7 @@ main {
 .overview-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 1.875rem;
+    margin: 1.875rem 0 2.8125rem 0;
     gap: 1rem 1.875rem;
 }
 .overview-item {
@@ -351,7 +351,7 @@ main {
         margin-top: 2.9375rem;
     }
     .overview-wrapper {
-        margin-top: 1.6875rem;
+        margin: 1.6875rem 0 4.6875rem 0;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .header-wrapper {
