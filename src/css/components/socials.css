@@ -21,7 +21,7 @@
         align-items: center;
         background-color: var(--bg-card);
         border-radius: var(--rounded);
-        font-size: 0.75rem;
+        font-size: var(--text-xs);
         transition: 200ms ease;
 
         @media (prefers-reduced-motion: reduce) {
@@ -86,7 +86,7 @@
         &--value {
             margin-block-start: 1.5rem;
             margin-inline-end: 0.4375rem;
-            font-size: 3.5rem;
+            font-size: var(--text-5xl);
             letter-spacing: -0.14rem;
             color: var(--text-heading);
             font-weight: var(--font-bold);

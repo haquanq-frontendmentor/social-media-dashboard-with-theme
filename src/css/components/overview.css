@@ -2,7 +2,7 @@
     padding-block: 3rem 4.6875rem;
 
     &__title {
-        font-size: 1.5rem;
+        font-size: var(--text-2xl);
         color: var(--text-heading);
         margin-block-end: 1.6875rem;
     }
@@ -53,13 +53,13 @@
 
     &__stat {
         padding-top: 1.5rem;
-        font-size: 2rem;
+        font-size: var(--text-4xl);
         color: var(--text-heading);
         align-self: end;
     }
 
     &__stat-diff {
-        font-size: 0.75rem;
+        font-size: var(--text-xs);
         display: flex;
         align-items: center;
         gap: 0.25rem;
