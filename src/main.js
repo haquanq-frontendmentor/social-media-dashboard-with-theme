@@ -17,9 +17,6 @@ if (savedThme) {
 }
 
 themeInput.addEventListener("click", (e) => {
-    document.body.classList.add("changing-theme");
-    setTimeout(() => document.body.classList.remove("changing-theme"), 200);
-
     if (themeInput.checked) {
         changeTheme("light");
     } else {

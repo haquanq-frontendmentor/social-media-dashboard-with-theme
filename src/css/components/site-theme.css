@@ -1,0 +1,20 @@
+.site-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8125rem;
+
+    &__title {
+        transition: 200ms ease;
+    }
+
+    @media (hover: hover) {
+        &:hover &__title {
+            color: var(--text-heading);
+        }
+    }
+
+    @media (min-width: 58em) {
+        margin-bottom: 0.25rem;
+    }
+}

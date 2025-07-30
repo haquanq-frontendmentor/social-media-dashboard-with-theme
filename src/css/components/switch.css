@@ -1,0 +1,33 @@
+.switch {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: var(--rounded-full);
+    background: linear-gradient(to right, hsla(var(--hsl-toggle-cyan), 100%), hsla(var(--hsl-toggle-lime), 100%));
+
+    &__thumb {
+        display: block;
+        width: 1.125rem;
+        height: 1.125rem;
+        margin: 0 0.1875rem;
+        border-radius: var(--rounded-full);
+        background-color: var(--bg-accent);
+        transition: 300ms ease;
+    }
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+    }
+
+    &__input:checked + &__thumb {
+        margin-left: 1.6875rem;
+    }
+}
+
+:root[data-theme="light"] .switch {
+    background: hsl(var(--hsl-toggle-light-theme));
+}

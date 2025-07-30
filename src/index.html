@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <title>Frontend Mentor | Soical media dashboard</title>
   </head>
@@ -29,183 +29,120 @@
           </div>
         </div>
 
-        <div class="highlight-wrapper">
-          <div class="highlight-item facebook">
-            <span class="top-pattern"></span>
-            <p class="username">
-              <img src="./assets/images/icon-facebook.svg" alt="Facebook logo icon" />
-              <span>@nathanf</span>
-            </p>
-            <p class="stat-number">1987</p>
-            <p class="stat-text">followers</p>
-            <p class="update up">
-              <img src="./assets/images/icon-up.svg" alt="Triangle icon pointing up" />
-              <span>12 Today</span>
-            </p>
-          </div>
-          <div class="highlight-item twitter">
-            <span class="top-pattern"></span>
-            <p class="username">
-              <img src="./assets/images/icon-twitter.svg" alt="Facebook logo icon" />
-              <span>@nathanf</span>
-            </p>
-            <p class="stat-number">1044</p>
-            <p class="stat-text">followers</p>
-            <p class="update up">
-              <img src="./assets/images/icon-up.svg" alt="Triangle icon pointing up" />
-              <span>99 Today</span>
-            </p>
-          </div>
-          <div class="highlight-item instagram">
-            <span class="top-pattern"></span>
-            <p class="username">
-              <img src="./assets/images/icon-instagram.svg" alt="Facebook logo icon" />
-              <span>@realnathanf</span>
-            </p>
-            <p class="stat-number">11k</p>
-            <p class="stat-text">followers</p>
-            <p class="update up">
-              <img src="./assets/images/icon-up.svg" alt="Triangle icon pointing up" />
-              <span>1099 Today</span>
-            </p>
-          </div>
+        <section class="socials">
+          <h2 class="sr-only">Your social media</h2>
+          <ul class="socials__list">
+            <li class="socials__item socials__item--facebook">
+              <h3 class="sr-only">Facbook</h3>
+              <p class="socials__username">
+                <img class="socials__username--icon" src="./assets/images/icon-facebook.svg" alt="" />
+                <span class="socials__username--text">@nathanf</span>
+              </p>
+              <p class="socials__stat">
+                <span class="socials__stat--value">1987</span>
+                <span class="socials__stat--text">followers</span>
+              </p>
+              <p class="socials__stat-diff socials__stat-diff--up">12 Today</p>
+            </li>
+            <li class="socials__item socials__item--twitter">
+              <h3 class="sr-only">Twitter</h3>
+              <p class="socials__username">
+                <img class="socials__username--icon" src="./assets/images/icon-twitter.svg" alt="" />
+                <span class="socials__username--text">@nathanf</span>
+              </p>
+              <p class="socials__stat">
+                <span class="socials__stat--value">1044</span>
+                <span class="socials__stat--text">followers</span>
+              </p>
+              <p class="socials__stat-diff socials__stat-diff--up">99 Today</p>
+            </li>
+            <li class="socials__item socials__item--instagram">
+              <h3 class="sr-only">Instagram</h3>
+              <p class="socials__username">
+                <img class="socials__username--icon" src="./assets/images/icon-instagram.svg" alt="" />
+                <span class="socials__username--text">@realnathanf</span>
+              </p>
+              <p class="socials__stat">
+                <span class="socials__stat--value">11k</span>
+                <span class="socials__stat--text">followers</span>
+              </p>
+              <p class="socials__stat-diff socials__stat-diff--up">1099 Today</p>
+            </li>
+            <li class="socials__item socials__item--youtube">
+              <h3 class="sr-only">Youtube</h3>
+              <p class="socials__username">
+                <img class="socials__username--logo" src="./assets/images/icon-youtube.svg" alt="" />
+                <span class="socials__username--text">Nathan F.</span>
+              </p>
+              <p class="socials__stat">
+                <span class="socials__stat--value">8239</span>
+                <span class="socials__stat--text">subscribers</span>
+              </p>
+              <p class="socials__stat-diff socials__stat-diff--down">144 Today</p>
+            </li>
+          </ul>
+        </section>
 
-          <div class="highlight-item youtube">
-            <span class="top-pattern"></span>
-            <p class="username"><img src="./assets/images/icon-youtube.svg" alt="Facebook logo icon" />Nathan F.</p>
-            <p class="stat-number">8239</p>
-            <p class="stat-text">subscribers</p>
-            <p class="update down">
-              <img src="./assets/images/icon-down.svg" alt="Triangle icon pointing down" />
-              <span>144 Today</span>
-            </p>
-          </div>
-        </div>
-
-        <section class="overview-container">
-          <h2>Overview - Today</h2>
-          <div class="overview-wrapper">
-            <div class="overview-item">
-              <p class="overview-title">
-                <span>Page Views</span>
-                <span class="logo">
-                  <img class="overview-logo" src="./assets/images/icon-facebook.svg" alt="Facbook logo icon" />
-                </span>
-              </p>
-              <div class="overview-stat">
-                <p class="number">87</p>
-                <p class="rate up">
-                  <img src="./assets/images/icon-up.svg" alt="Triangle icon pointing up" />
-                  <span>3%</span>
-                </p>
-              </div>
-            </div>
-            <div class="overview-item">
-              <p class="overview-title">
-                <span>Likes</span>
-                <span class="logo">
-                  <img class="overview-logo" src="./assets/images/icon-facebook.svg" alt="Facbook logo icon" />
-                </span>
-              </p>
-              <div class="overview-stat">
-                <p class="number">52</p>
-                <p class="rate down">
-                  <img src="./assets/images/icon-down.svg" alt="Triangle icon pointing down" />
-                  <span>2%</span>
-                </p>
-              </div>
-            </div>
-            <div class="overview-item">
-              <p class="overview-title">
-                <span>Likes</span>
-                <span class="logo">
-                  <img class="overview-logo" src="./assets/images/icon-instagram.svg" alt="Instagram logo icon" />
-                </span>
-              </p>
-              <div class="overview-stat">
-                <p class="number">5462</p>
-                <p class="rate up">
-                  <img src="./assets/images/icon-up.svg" alt="Triangle icon pointing up" />
-                  <span>2257%</span>
-                </p>
-              </div>
-            </div>
-            <div class="overview-item">
-              <p class="overview-title">
-                <span>Profile Views</span>
-                <span class="logo">
-                  <img class="overview-logo" src="./assets/images/icon-instagram.svg" alt="Instagram logo icon" />
-                </span>
-              </p>
-              <div class="overview-stat">
-                <p class="number">52k</p>
-                <p class="rate up">
-                  <img src="./assets/images/icon-up.svg" alt="Triangle icon pointing up" />
-                  <span>1375%</span>
-                </p>
-              </div>
-            </div>
-            <div class="overview-item">
-              <p class="overview-title">
-                <span>Retweets</span>
-                <span class="logo">
-                  <img class="overview-logo" src="./assets/images/icon-twitter.svg" alt="Twitter logo icon" />
-                </span>
-              </p>
-              <div class="overview-stat">
-                <p class="number">117</p>
-                <p class="rate up">
-                  <img src="./assets/images/icon-up.svg" alt="Triangle icon pointing up" />
-                  <span>303%</span>
-                </p>
-              </div>
-            </div>
-            <div class="overview-item">
-              <p class="overview-title">
-                <span>Likes</span>
-                <span class="logo">
-                  <img class="overview-logo" src="./assets/images/icon-twitter.svg" alt="Twitter logo icon" />
-                </span>
-              </p>
-              <div class="overview-stat">
-                <p class="number">507</p>
-                <p class="rate up">
-                  <img src="./assets/images/icon-up.svg" alt="Triangle icon pointing up" />
-                  <span>553%</span>
-                </p>
-              </div>
-            </div>
-            <div class="overview-item">
-              <p class="overview-title">
-                <span>Likes</span>
-                <span class="logo">
-                  <img class="overview-logo" src="./assets/images/icon-youtube.svg" alt="Youtube logo icon" />
-                </span>
-              </p>
-              <div class="overview-stat">
-                <p class="number">107</p>
-                <p class="rate down">
-                  <img src="./assets/images/icon-down.svg" alt="Triangle icon pointing down" />
-                  <span>19%</span>
-                </p>
-              </div>
-            </div>
-            <div class="overview-item">
-              <p class="overview-title">
-                <span>Total Views</span>
-                <span class="logo">
-                  <img class="overview-logo" src="./assets/images/icon-youtube.svg" alt="Youtube logo icon" />
-                </span>
-              </p>
-              <div class="overview-stat">
-                <p class="number">1407</p>
-                <p class="rate down">
-                  <img src="./assets/images/icon-down.svg" alt="Triangle icon pointing down" />
-                  <span>12%</span>
-                </p>
-              </div>
-            </div>
-          </div>
+        <section class="overview">
+          <h2 class="overview__title">Overview - Today</h2>
+          <ul class="overview__list">
+            <li class="overview__item">
+              <h3 class="sr-only">Facebook</h3>
+              <p class="overview__label" aria-hidden="true">Page Views</p>
+              <img class="overview__logo" src="./assets/images/icon-facebook.svg" alt="" />
+              <span class="overview__stat">87 <span class="sr-only">page views</span> </span>
+              <span class="overview__stat-diff overview__stat-diff--up">3%</span>
+            </li>
+            <li class="overview__item">
+              <h3 class="sr-only">Facebook</h3>
+              <p class="overview__label" aria-hidden="true">Likes</p>
+              <img class="overview__logo" src="./assets/images/icon-facebook.svg" alt="" />
+              <span class="overview__stat">52 <span class="sr-only">likes</span> </span>
+              <span class="overview__stat-diff overview__stat-diff--down">2%</span>
+            </li>
+            <li class="overview__item">
+              <h3 class="sr-only">Instagram</h3>
+              <span class="overview__label" aria-hidden="true">Likes</span>
+              <img class="overview__logo" src="./assets/images/icon-instagram.svg" alt="" />
+              <p class="overview__stat">5462 <span class="sr-only">likes</span></p>
+              <p class="overview__stat-diff overview__stat-diff--up">2257%</p>
+            </li>
+            <li class="overview__item">
+              <h3 class="sr-only">Instagram</h3>
+              <span class="overview__label" aria-hidden="true">Profile Views </span>
+              <img class="overview__logo" src="./assets/images/icon-instagram.svg" alt="" />
+              <p class="overview__stat">52k <span class="sr-only">profile views</span></p>
+              <p class="overview__stat-diff overview__stat-diff--up">1375%</p>
+            </li>
+            <li class="overview__item">
+              <h3 class="sr-only">Twitter</h3>
+              <span class="overview__label" aria-hidden="true">Retweets </span>
+              <img class="overview__logo" src="./assets/images/icon-twitter.svg" alt="" />
+              <p class="overview__stat">117 <span class="sr-only">retweets</span></p>
+              <p class="overview__stat-diff overview__stat-diff--up">303%</p>
+            </li>
+            <li class="overview__item">
+              <h3 class="sr-only">Twitter</h3>
+              <span class="overview__label" aria-hidden="true">Likes </span>
+              <img class="overview__logo" src="./assets/images/icon-twitter.svg" alt="" />
+              <p class="overview__stat">507 <span class="sr-only">likes</span></p>
+              <p class="overview__stat-diff overview__stat-diff--up">553%</p>
+            </li>
+            <li class="overview__item">
+              <h3 class="sr-only">Youtube</h3>
+              <span class="overview__label" aria-hidden="true">Likes </span>
+              <img class="overview__logo" src="./assets/images/icon-youtube.svg" alt="" />
+              <p class="overview__stat">107 <span class="sr-only">likes</span></p>
+              <p class="overview__stat-diff overview__stat-diff--down">19%</p>
+            </li>
+            <li class="overview__item">
+              <h3 class="sr-only">Youtube</h3>
+              <span class="overview__label" aria-hidden="true">Total Views </span>
+              <img class="overview__logo" src="./assets/images/icon-youtube.svg" alt="" />
+              <p class="overview__stat">1407 <span class="sr-only">total views</span></p>
+              <p class="overview__stat-diff overview__stat-diff--down">12%</p>
+            </li>
+          </ul>
         </section>
       </div>
     </main>

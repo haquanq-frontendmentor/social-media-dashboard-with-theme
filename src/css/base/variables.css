@@ -1,0 +1,46 @@
+:root {
+    --color-lime-green: hsl(163, 72%, 41%);
+    --color-bright-red: hsl(356, 69%, 56%);
+
+    --hsl-facebook: 208, 92%, 53%;
+    --hsl-twitter: 203, 89%, 53%;
+    --hsl-youtube: 348, 97%, 39%;
+    --hsl-instagram-yellow: 37, 97%, 70%;
+    --hsl-instagram-purple: 329, 70%, 58%;
+
+    --bg-primary: hsl(230, 17%, 14%);
+    --bg-accent: hsl(232, 19%, 15%);
+    --bg-card: hsl(228, 28%, 20%);
+    --bg-card-hover: hsl(228, 26%, 27%);
+    --text-body: hsl(228, 34%, 66%);
+    --text-heading: hsl(0, 0%, 100%);
+
+    --hsl-toggle-cyan: 210, 78%, 56%;
+    --hsl-toggle-lime: 146, 68%, 55%;
+    --hsl-toggle-light-theme: 230, 22%, 74%;
+
+    --font-normal: 400;
+    --font-bold: 700;
+
+    --rounded: 0.375rem;
+    --rounded-xl: 1.5rem;
+    --rounded-full: 9999px;
+}
+
+:root[data-theme="dark"] {
+    --bg-primary: hsl(230, 17%, 14%);
+    --bg-accent: hsl(232, 19%, 15%);
+    --bg-card: hsl(228, 28%, 20%);
+    --bg-card-hover: hsl(228, 26%, 27%);
+    --text-body: hsl(228, 34%, 66%);
+    --text-heading: hsl(0, 0%, 100%);
+}
+
+:root[data-theme="light"] {
+    --bg-primary: hsl(0, 0%, 100%);
+    --bg-accent: hsl(225, 100%, 98%);
+    --bg-card: hsl(227, 47%, 96%);
+    --bg-card-hover: hsl(232, 33%, 91%);
+    --text-body: hsl(228, 12%, 44%);
+    --text-heading: hsl(230, 17%, 14%);
+}
