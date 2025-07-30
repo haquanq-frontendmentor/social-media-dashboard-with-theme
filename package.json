@@ -1,12 +1,13 @@
 {
-  "name": "fm-social-media-dashboard-with-theme",
+  "name": "social-media-dashboard-with-theme",
   "description": "Solution for frontendmentor.io challenge: social-media-dashboard-with-theme",
+  "author": "haquanq",
+  "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "browser-sync": "^3.0.2"
   },
   "scripts": {
     "dev": "browser-sync start -s app -f app --no-ui"
-  },
-  "author": "haquanq",
-  "license": "MIT"
+  }
 }
