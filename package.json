@@ -4,11 +4,14 @@
   "author": "haquanq",
   "license": "MIT",
   "type": "module",
-  "devDependencies": {
-    "vite": "^6.3.5"
-  },
   "scripts": {
     "dev": "vite serve --port 5000",
     "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.21.1",
+    "stylelint-config-standard": "^38.0.0"
   }
 }
