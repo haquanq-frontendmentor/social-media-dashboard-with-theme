@@ -5,9 +5,10 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
-    "browser-sync": "^3.0.2"
+    "vite": "^6.3.5"
   },
   "scripts": {
-    "dev": "browser-sync start -s app -f app --no-ui"
+    "dev": "vite serve --port 5000",
+    "build": "vite build"
   }
 }
