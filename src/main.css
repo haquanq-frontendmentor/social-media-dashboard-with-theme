@@ -91,6 +91,7 @@ body {
     justify-content: center;
     background-color: var(--bg-primary);
     color: var(--text-body);
+    min-height: 100vh;
 }
 
 .bg-pattern {
@@ -103,13 +104,12 @@ body {
     height: 14.6875rem;
 }
 
-main {
-    z-index: 100;
-    min-height: 100vh;
-    width: min(100vw - 3.125rem, 69.375rem);
+.main {
+    &__container {
+        width: min(100vw - 3.125rem, 69.375rem);
+    }
 }
 
-/* -------------------------------- DASHBOARD ------------------------------- */
 .header-wrapper {
     width: 100%;
     display: flex;
