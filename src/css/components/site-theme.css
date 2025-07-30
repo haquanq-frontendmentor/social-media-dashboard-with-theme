@@ -6,6 +6,10 @@
 
     &__title {
         transition: 200ms ease;
+
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
     }
 
     @media (hover: hover) {
@@ -15,6 +19,6 @@
     }
 
     @media (min-width: 58em) {
-        margin-bottom: 0.25rem;
+        margin-block-end: 0.25rem;
     }
 }

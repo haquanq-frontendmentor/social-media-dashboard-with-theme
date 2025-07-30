@@ -24,6 +24,10 @@
         font-size: 0.75rem;
         transition: 200ms ease;
 
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
+
         @media (hover: hover) {
             &:hover {
                 background-color: var(--bg-card-hover);
@@ -61,7 +65,7 @@
 
     &__username {
         font-weight: bold;
-        margin-top: 1.75rem;
+        margin-block-start: 1.75rem;
         display: flex;
         align-items: center;
         gap: 0.5rem;
@@ -80,7 +84,8 @@
         align-items: center;
 
         &--value {
-            margin: 1.5rem 0 0.4375rem;
+            margin-block-start: 1.5rem;
+            margin-inline-end: 0.4375rem;
             font-size: 3.5rem;
             letter-spacing: -0.14rem;
             color: var(--text-heading);
@@ -95,7 +100,8 @@
 
     &__stat-diff {
         letter-spacing: 0.0125rem;
-        margin: 1.75rem 0 1.5625rem;
+        margin-block: 1.75rem 1.5625rem;
+        margin-inline: 0;
         font-weight: var(--font-bold);
         display: flex;
         align-items: center;

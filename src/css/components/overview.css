@@ -31,6 +31,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
+
         @media (hover: hover) {
             &:hover {
                 background-color: var(--bg-card-hover);
