@@ -23,7 +23,8 @@
     }
 
     &__item {
-        padding: 1.625rem 1.875rem 1.4375rem 1.5rem;
+        padding-block: 1.625rem 1.4375rem;
+        padding-inline: 1.5rem 1.875rem;
         background-color: var(--bg-card);
         border-radius: var(--rounded);
         font-weight: var(--font-bold);
