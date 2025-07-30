@@ -1,25 +1,25 @@
 const LOCAL_THEME_VAR = "user-pref-theme";
+const THEMES = { LIGHT: "light", DARK: "dark" };
+
 const savedThme = localStorage.getItem(LOCAL_THEME_VAR);
+const preferDarkColorScheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
 const themeInput = document.querySelector("#theme-btn");
 
-function changeTheme(theme) {
+const setTheme = (theme) => {
     localStorage.setItem(LOCAL_THEME_VAR, theme);
     document.documentElement.setAttribute("data-theme", theme);
-}
+};
 
-if (savedThme) {
-    if (savedThme == "light") {
-        themeInput.checked = true;
+requestAnimationFrame(() => {
+    if (savedThme) {
+        themeInput.checked = savedThme == THEMES.LIGHT;
+        document.documentElement.setAttribute("data-theme", savedThme);
+    } else if (preferDarkColorScheme) {
+        setTheme(THEMES.DARK);
     }
-    document.documentElement.setAttribute("data-theme", savedThme);
-} else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
-    changeTheme("light");
-}
+});
 
 themeInput.addEventListener("click", (e) => {
-    if (themeInput.checked) {
-        changeTheme("light");
-    } else {
-        changeTheme("dark");
-    }
+    setTheme(themeInput.checked ? THEMES.LIGHT : THEMES.DARK);
 });
