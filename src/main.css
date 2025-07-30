@@ -87,67 +87,71 @@ body {
     font-family: "Inter", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
     font-size: 0.875rem;
     line-height: 1;
-    display: flex;
-    justify-content: center;
     background-color: var(--bg-primary);
     color: var(--text-body);
     min-height: 100vh;
 }
 
-.bg-pattern {
-    position: absolute;
-    border-bottom-left-radius: var(--rounded-xl);
-    border-bottom-right-radius: var(--rounded-xl);
-    background-color: var(--bg-accent);
-    top: 0;
-    width: 100%;
-    height: 14.6875rem;
-}
-
 .main {
+    position: relative;
+
     &__container {
+        position: relative;
         width: min(100vw - 3.125rem, 69.375rem);
+        margin-inline: auto;
+        z-index: 100;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        border-bottom-left-radius: var(--rounded-xl);
+        border-bottom-right-radius: var(--rounded-xl);
+        background-color: var(--bg-accent);
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 14.6875rem;
     }
 }
 
-.header-wrapper {
+.intro {
     width: 100%;
     display: flex;
     flex-direction: column;
     font-weight: var(--fw-bold);
     margin-top: 2.375rem;
-
-    --heading-fs: 1.5rem;
 }
 
-.header-wrapper .divider {
+.intro__divider {
     background-color: var(--text-body);
     width: 100%;
     height: 1px;
     margin: 1.5625rem 0 1rem;
 }
 
-.dashboard-heading h1 {
+.intro__title {
     color: var(--text-heading);
-    font-size: var(--heading-fs);
+    font-size: 1.5rem;
 }
 
-.dashboard-heading p {
+.intro__description {
     margin-top: 0.5625rem;
 }
 
-.dashboard-theme-switch {
+.site-theme {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.8125rem;
+
+    &__title {
+        transition: 200ms ease;
+    }
 }
 
-.dashboard-theme-switch input {
-    display: none;
-}
-
-.dashboard-theme-switch .track {
-    margin-left: 0.8125rem;
+.switch {
+    position: relative;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -155,28 +159,29 @@ body {
     height: 1.5rem;
     border-radius: var(--rounded-full);
     background: linear-gradient(to right, hsla(var(--hsl-toggle-cyan), 100%), hsla(var(--hsl-toggle-lime), 100%));
+
+    &__thumb {
+        display: block;
+        width: 1.125rem;
+        height: 1.125rem;
+        margin: 0 0.1875rem;
+        border-radius: var(--rounded-full);
+        background-color: var(--bg-accent);
+        transition: 300ms ease;
+    }
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+    }
+
+    &__input:checked + &__thumb {
+        margin-left: 1.6875rem;
+    }
 }
 
-:root[data-theme="light"] body .dashboard-theme-switch .track {
+:root[data-theme="light"] .switch {
     background: hsl(var(--hsl-toggle-light-theme));
-}
-
-.dashboard-theme-switch .thumb {
-    display: block;
-    width: 1.125rem;
-    height: 1.125rem;
-    margin: 0 0.1875rem;
-    border-radius: var(--rounded-full);
-    background-color: var(--bg-accent);
-    transition: 250ms ease-in-out;
-}
-
-.dashboard-theme-switch input:checked + .thumb {
-    margin-left: 1.6875rem;
-}
-
-.dashboard-theme-switch p {
-    transition: 200ms ease;
 }
 
 .dashboard-content {
@@ -351,7 +356,7 @@ body {
         background-color: var(--bg-card-hover);
     }
 
-    .dashboard-theme-switch:hover p {
+    .site-theme:hover p {
         color: var(--text-heading);
     }
 }
@@ -368,7 +373,7 @@ body {
 }
 
 @media screen and (min-width: 58em) {
-    .dashboard-theme-switch {
+    .site-theme {
         margin-bottom: 0.25rem;
     }
 
@@ -382,22 +387,22 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    .header-wrapper {
+    .intro {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
 
-    .header-wrapper .divider {
+    .intro__divider {
         display: none;
     }
 
-    .dashboard-heading h1 {
+    .intro__title {
         margin: 0.0625rem 0 0 -0.1875rem;
         font-size: 1.75rem;
     }
 
-    .dashboard-heading p {
+    .intro__description {
         margin: 0.5rem 0 0 -0.125rem;
     }
 }
