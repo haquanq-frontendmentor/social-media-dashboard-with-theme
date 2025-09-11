@@ -10,7 +10,6 @@
   },
   "devDependencies": {
     "vite": "^6.3.5",
-    "prettier": "^3.6.2",
     "stylelint": "^16.21.1",
     "stylelint-config-standard": "^38.0.0",
     "postcss-custom-media": "^11.0.6",
