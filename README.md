@@ -74,19 +74,20 @@ Install the following:
 
 - Git (latest LTS recommended)
 - Node.js (latest LTS recommended)
+- pnpm (lastest version)
 
 ### Setup
 
 ```
 git clone https://github.com/haquanq-frontendmentor/social-media-dashboard-with-theme.git
 cd social-media-dashboard-with-theme
-npm install
+pnpm install
 ```
 
 ### Start Development Server
 
 ```
-npm run dev
+pnpm dev
 ```
 
 ## :maple_leaf: Deployment
