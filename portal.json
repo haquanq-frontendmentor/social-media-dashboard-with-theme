@@ -1,0 +1,15 @@
+{
+  "name": "Social Media Dashboard With Theme",
+  "featured": false,
+  "colors:": {
+    "brand": "#1D2029"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/social-media-dashboard-with-theme/main/docs/preview.jpg"
+  },
+  "frontendmentor": {
+    "difficulty": "junior",
+    "challengeUrl": "https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H",
+    "solutionUrl": "https://www.frontendmentor.io/solutions/only-html-and-css-and-js-U4dZJoVLIj"
+  }
+}
